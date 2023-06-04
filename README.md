@@ -6,7 +6,7 @@ To run the application, open two terminal windows and navigate to the client and
 
 I wrote this application to learn how to write a fullstack MERN application as well as update my web development skills.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/jYvpPd2qQWE)
 
 # Web Pages
 
