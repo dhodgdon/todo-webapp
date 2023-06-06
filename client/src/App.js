@@ -10,6 +10,7 @@ function App() {
         GetTodos();
     }, []);
 
+    // Fetch everything from the "/todos" URI (all the todos)
     const GetTodos = () => {
         fetch(API_BASE + "/todos")
             .then(res => res.json())
@@ -17,6 +18,7 @@ function App() {
             .catch((err) => console.error("Error: " , err));
     }
 
+    // Complete a todo specified by its ID
     const completeTodo = async id => {
         const data = await fetch(API_BASE + "/todo/complete/" + id).then(res => res.json());
 
@@ -29,6 +31,7 @@ function App() {
         }));
     }
 
+    // Delete a todo specified by its ID
     const deleteTodo = async id => {
         const data = await fetch(API_BASE + "/todo/delete/" + id, {
             method: "DELETE"
@@ -37,6 +40,7 @@ function App() {
         setTodos(todos => todos.filter(todo => todo._id !== data._id));
     }
 
+    // Create a new todo
     const addTodo = async () => {
         const data = await fetch(API_BASE + "/todo/new", {
             method: "POST",
@@ -53,6 +57,7 @@ function App() {
         setNewTodo("");
     }
 
+    // Create the HTML for the DOM
     return (
         <div className="App">
             <h1>Welcome, User</h1>

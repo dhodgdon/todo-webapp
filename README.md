@@ -17,6 +17,7 @@ I will add a login page to this application in the future.
 # Development Environment
 
 * Visual Studio Code
+    * Extension: REST Client (v0.25.1) by Huachao Mao
 * Git / GitHub
 * Programming languages: Javascript, CSS, HTML
 * Libraries: 

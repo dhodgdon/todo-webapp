@@ -1,3 +1,6 @@
+# This file uses the VS Code extension "REST Client" (v0.25.1), 
+# by Huachao Mao, to make HTTP requests to our web app.
+
 GET http://localhost:3001/todos
 
 ###
